@@ -465,3 +465,20 @@ ANSWER: Artificial Keys are the keys that are used when no attributes contain al
 - Functional dependency says that if two tuples have same values for attributes A1, A2,..., An, then those two tuples must have to have same values for attributes B1, B2, ..., Bn.
 - Functional dependency is represented by an arrow sign (→) that is, X→Y, where X functionally determines Y.
 - The left-hand side attributes determine the values of attributes on the right-hand side.
+
+### Armstrong's Axioms
+
+- If F is a set of functional dependencies then the closure of F, denoted as F+.
+- F+, is the set of all functional dependencies logically implied by F.
+
+1. **Reflexive rule** − If alpha is a set of attributes and beta is_subset_of alpha, then alpha holds beta.
+2. **Augmentation rule** − If a → b holds and y is attribute set, then ay → by also holds. That is adding attributes in dependencies, does not change the basic dependencies.
+3. **Transitivity rule** − Same as transitive rule in algebra, if a → b holds and b → c holds, then a → c also holds. a → b is called as a functionally that determines b
+
+### Trivial Functional Dependency
+
+1. **Trivial** − If a functional dependency (FD) X → Y holds, where Y is a subset of X, then it is called a trivial FD. Trivial FDs always hold.
+
+2. **Non-trivial** − If an FD X → Y holds, where Y is not a subset of X, then it is called a non-trivial FD.
+
+3. **Completely non-trivial** − If an FD X → Y holds, where x intersect Y = Φ, it is said to be a completely non-trivial FD.
